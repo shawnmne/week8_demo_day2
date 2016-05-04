@@ -1,0 +1,5 @@
+<h1>Gorilla <%= @gorilla.name %></h1>
+<p><%= @gorilla.description %></p>
+<p>On a scale of 1 to 10, <%=@gorilla.name %> is at <%= @gorilla.anger_level %> for anger level</p>
+<p><%= link_to "Edit Gorilla", edit_gorilla_path(@gorilla) %></p>
+<p><%= link_to "All Gorillas", :gorillas %></p>

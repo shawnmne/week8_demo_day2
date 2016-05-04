@@ -1,0 +1,11 @@
+<h1>Gorillas</h1>
+<% if @gorillas.any? %>
+	<ul>
+		<% @gorillas.each do |g| %>
+			<li><%= link_to g.name, gorilla_path(g) %></li>
+		<% end %>
+	</ul>
+<% else %>
+	<p>Sorry.  No gorillas here!</p>
+<% end %>
+<p><%= link_to "New Gorilla", new_gorilla_path %></p>
